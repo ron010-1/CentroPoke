@@ -58,37 +58,3 @@ body{
     padding-right: 20px;
     padding-top: 820px;
 }
-#container-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "img1 img1 img2 img2"
-      "img1 img1 img3 img4";
-}
-#noticia1{
-    grid-area: img1;
-}
-#noticia2{
-    grid-area: img2;
-}
-#noticia3{
-    grid-area: img3;
-}
-#noticia4{
-    grid-area: img4;
-}
-/* Estilos para o formato desktop */
-@media only screen and (min-width: 1200px) {
-
-}
-
-/* Estilos para o formato de tablet */
-@media only screen and (min-width: 576px) and (max-width: 990px) {
-
-}
-
-/* Estilos para o formato de smartphone */
-@media only screen and (max-width: 575px) {
-    
-}
