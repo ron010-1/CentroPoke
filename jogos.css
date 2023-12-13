@@ -1,4 +1,5 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,3 +59,121 @@ body{
     padding-right: 20px;
     padding-top: 820px;
 }
+
+.jogos-1{
+
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.effect-item {
+  position: relative;
+  display: inline-block;
+  margin: 2rem 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #EEE;
+  box-shadow: 2px 2px 2px #373E59;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.effect-item::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0CF;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.effect-item:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.effect-item:hover::after {
+  opacity: 1;
+}
+
+.jogos-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* TABELA QUE FICA EM BAIXO DO VÍDEO */
+
+.gamepage-header-meta-wrapper {
+  background-color: #222; 
+  color: #fff; 
+  padding: 10px; 
+  border-radius: 10px; 
+  max-width: 45%
+  
+  
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* VÍDEO */
+
+  .Pokemon1 {
+    text-align: left; 
+    margin: 10px;
+  }
+
+  /* TEXTO ACIMA DO VÍDEO */
+  
+  h1 {
+    color:#EEE
+  }
+  
+  iframe {
+    width: 110%;
+  }
+  
+  .table-container {
+    width: 50%;
+    margin: 60px 4pc 
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #222;
+    color: #fff;
+  }
+  
+
+  
+  
+  
+  
+ 
