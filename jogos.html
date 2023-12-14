@@ -109,60 +109,164 @@
                   </div>
                 </div>
                     </div>
+                    <div class="TITULO-1">
+                        <div class="TITULO-div">
+                        </div>
                     <div class="container">
                         <div class="Pokemon1">
                           <h1>Pokémon Yellow Version: Special Pikachu Edition</h1>
                           <iframe width="1280" height="720" src="https://www.youtube.com/embed/IjTrbEeqDAI" title="Pokemon Yellow: Special Pikachu Edition Official Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                  
-                        <div class="table-container">
-                          <table>
-                            <thead>
-                              <tr>
-                                <th>Característica</th>
-                                <th>Detalhes</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Título</td>
-                                <td>Pokémon Yellow Version: Special Pikachu Edition</td>
-                              </tr>
-                              <tr>
-                                <td>Desenvolvedor</td>
-                                <td>Game Freak</td>
-                              </tr>
-                              <tr>
-                                <td>Publicador</td>
-                                <td>Nintendo</td>
-                              </tr>
-                              <tr>
-                                <td>Data de Lançamento</td>
-                                <td>12 de setembro de 1998 (Japão)</td>
-                              </tr>
-                              <tr>
-                                <td>Plataforma</td>
-                                <td>Game Boy</td>
-                              </tr>
-                              <tr>
-                                <td>Gênero</td>
-                                <td>RPG</td>
-                              </tr>
-                              <tr>
-                                <td>Modo de Jogo</td>
-                                <td>Um jogador</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                  
-                    </body>
-                    <div class="gamepage-header-meta-wrapper">
-                  <span class="gamepage-header-meta">Consola: <a href="/Consolas-e-acessorios/Historia-da-Nintendo/Game-Boy/Game-Boy-627031.html" title="Game Boy">Game Boy</a>, <a href="/Consolas-e-acessorios/Familia-Nintendo-3DS/Familia-Nintendo-3DS-94560.html" title="Nintendo 3DS">Nintendo 3DS</a></span> <span class="gamepage-header-meta">Data de lançamento: 16/06/2000</span>
-                    </div>       
+                        </div>           
     </main>
- 
+
+    <main>
+      <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f5f5f5;
+          color: #333;
+          text-align: center;
+          padding: 20px;
+        }
+    
+        h1 {
+          color: #e44d26;
+        }
+    
+        .pokemon-info {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px;
+        }
+    
+        .pokemon {
+          width: 300px;
+          padding: 20px;
+          margin: 10px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+          opacity: 0;
+          animation: fadeIn 0.5s ease-in-out forwards;
+        }
+    
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+    
+        .pokemon:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          
+        }
+    
+        .charmander {
+          background-color: #f08031;
+          margin-bottom: 170px
+        }
+    
+        .bulbasaur {
+          background-color: #7ac74c;
+          margin-bottom: 170px
+        }
+    
+        .squirtle {
+          background-color: #76a5e1;
+          margin-bottom: 170px
+        }
+    
+        .pokemon img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+          transition: transform 0.2s ease-in-out;
+          
+        }
+    
+        .pokemon:hover img {
+          transform: scale(1.05);
+          
+        }
+    
+        .pokemon p {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: left;
+          background: rgba(255, 255, 255, 0.95);
+          border-radius: 10px;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          
+        }
+    
+        .pokemon:hover p {
+          display: block;
+          opacity: 1;
+        }
+      </style>
+      <title>Aventura Pokémon</title>
+    </head>
+    <body>
+      <h1>O Trio Pokémon</h1>
+    
+      <div class="pokemon-info">
+        <div class="pokemon charmander">
+          <img src="https://66.media.tumblr.com/tumblr_ma0tijLFPg1rfjowdo1_500.gif" alt="Charmander">
+          <h2>Charmander</h2>
+          <p>Uma chama queima na ponta do rabo de Charmander, significando sua vitalidade. Este Pokémon do tipo Fogo é conhecido por seu espírito energético e evolui para o poderoso Charizard.</p>
+        </div>
+    
+        <div class="pokemon bulbasaur">
+          <img src="https://i.gifer.com/WnES.gif" alt="Bulbasaur">
+          <h2>Bulbasaur</h2>
+          <p>Bulbasaur, um Pokémon do tipo Planta/Venenoso, carrega uma planta bulbosa em suas costas. Ao evoluir para Ivysaur e depois para Venusaur, a planta se transforma em uma flor magnífica.</p>
+        </div>
+    
+        <div class="pokemon squirtle">
+          <img src="https://66.media.tumblr.com/tumblr_ma4ft6OXxw1rfjowdo1_500.gif" alt="Squirtle">
+          <h2>Squirtle</h2>
+          <p>Squirtle, o Pokémon do tipo Água, cativa com sua aparência adorável. Conhecido por suas habilidades baseadas em água, Squirtle evolui para Wartortle e eventualmente para o temível Blastoise.</p>
+        </div>
+      </div>
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </main>
     <footer class="menu-baixo">
         <nav class="menu-redes-sociais">
             <a href="https://github.com/ron010-1/CentroPoke"><img src="imagens/github.png" alt="github"></a>
