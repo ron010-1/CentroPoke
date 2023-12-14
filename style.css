@@ -1,42 +1,45 @@
+@font-face {
+    font-family: 'Oxanium';
+    src: url('caminho/para/o/arquivo/fonte.woff2') format('woff2'), /* Formato WOFF2 */
+         url('caminho/para/o/arquivo/fonte.woff') format('woff'); /* Formato WOFF */
+    /* Adicione outros formatos de fonte, se necessário */
+    /* Exemplo: url('caminho/para/o/arquivo/fonte.ttf') format('truetype'); */
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
-
-  
 body{
-    position: fixed;
     width: 100%;
     background-image: url(imagens/fundo.png);
     color: white;
     min-height: 100vh;
     text-align: center;
 }
-
-.menu-principal{
+.menu-principal {
     position: fixed;
     width: 100%;
-    background-color: rgba(230, 230, 230, 0.874);;
-    display: flex;
     align-items: center;
+    justify-items: center;
+    display: flex;
     justify-content: space-between;
     font-size: 20px;
     border-bottom: 2px solid white;
     padding-bottom: 12px;
+    background-color: #f51010; /* Cor de fundo para o menu inteiro */
 }
-
 .menu-esquerda{
     display: flex;
-    gap: 30px;
-    padding-left: 20px;
+    gap: 35px;
+    padding-left: 100px;
 }
 
 .menu-direita{
     display: flex;
-    gap: 30px;
-    padding-right: 20px;
+    gap: 35px;
+    padding-right: 100px;
 }
 
 .menu-logo{
@@ -96,6 +99,29 @@ body{
 .menu-logo-baixo{
     height: 30px;
 }
+.Desenvolvedores{
+    margin-top: 110px;
+}
+.about{
+    font-size: 50px;   
+}
+.container-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.texto1 {
+    flex: 1; /* Ocupa 2 partes do espaço */
+    margin-left: 70px;
+}
+
+.texto2 {
+    flex: 1;
+    margin-right: 70px;
+}
 /* Estilos para o formato desktop */
 @media only screen and (min-width: 1200px) {
 
@@ -104,7 +130,7 @@ body{
 /* Estilos para o formato de tablet */
 @media only screen and (min-width: 576px) and (max-width: 990px) {
     
-}
+} 
 
 /* Estilos para o formato de smartphone */
 @media only screen and (max-width: 575px) {

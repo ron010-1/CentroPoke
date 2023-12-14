@@ -96,29 +96,35 @@ main {
     font-size: 0.9rem;
 }
 
-.menu-principal{
+.menu-principal {
     position: fixed;
     width: 100%;
-    background-color: rgba(230, 230, 230, 0.874);;
-    display: flex;
     align-items: center;
+    justify-items: center;
+    display: flex;
     justify-content: space-between;
     font-size: 20px;
     border-bottom: 2px solid white;
     padding-bottom: 12px;
+    background-color: #f51010; /* Cor de fundo para o menu inteiro */
 }
-
 .menu-esquerda{
     display: flex;
-    gap: 30px;
-    padding-left: 20px;
+    gap: 35px;
+    padding-left: 100px;
 }
 
 .menu-direita{
     display: flex;
-    gap: 30px;
-    padding-right: 20px;
+    gap: 35px;
+    padding-right: 100px;
 }
+
+.menu-logo{
+    height: 40px;
+    margin-top: 5px;
+}
+
 
 .menu-logo{
     height: 40px;

@@ -14,33 +14,37 @@ body{
     text-align: center;
 }
 
-.menu-principal{
-    position: fixed;
-    width: 100%;
-    background-color: rgba(230, 230, 230, 0.874);;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    padding-bottom: 12px;
+.menu-principal {
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 12px;
+  background-color: #f51010; /* Cor de fundo para o menu inteiro */
 }
-
 .menu-esquerda{
-    display: flex;
-    gap: 30px;
-    padding-left: 20px;
+  display: flex;
+  gap: 35px;
+  padding-left: 100px;
 }
 
 .menu-direita{
-    display: flex;
-    gap: 30px;
-    padding-right: 20px;
+  display: flex;
+  gap: 35px;
+  padding-right: 100px;
 }
 
 .menu-logo{
+  height: 40px;
+  margin-top: 5px;
+}
+
+
+.menu-logo{
     height: 40px;
-    margin-top: 5px;
 }
 
 .menu-baixo{
@@ -117,7 +121,7 @@ body{
   color: #fff; 
   padding: 10px; 
   border-radius: 10px; 
-  max-width: 44%
+  max-width: 45%
   
   
 }
@@ -125,7 +129,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
   }
   
   .container {
@@ -135,41 +139,39 @@ body {
 
   /* VÍDEO */
 
-.Pokemon1 {
-    text-align: ;
-    margin: 00px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.Pokemon1 h1 {
-  color: #EEE;
-  
-  margin-bottom: 10px;
-  margin-top: 80px
-  
-}
-
-.Pokemon1 iframe {
-  width: 170%;
-  max-width: 819px; 
-  height: 800px;
-  margin-bottom: 170px; 
-  
-}
+  .Pokemon1 {
+    text-align: left; 
+    margin: 10px;
+  }
 
   /* TEXTO ACIMA DO VÍDEO */
   
   h1 {
     color:#EEE
-    
   }
   
   iframe {
     width: 110%;
+  }
+  
+  .table-container {
+    width: 50%;
+    margin: 60px 4pc 
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
   }
   
   th {
@@ -177,62 +179,6 @@ body {
     color: #fff;
   }
   
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    margin: 20px;
-}
-
-.update-info {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.jogos-1, .jogos-2 {
-  background-image: url("https://assets.nintendo.com/image/upload/q_auto:good/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/MNS%20HOME/Characters/PLP_Hero_Characters_Pokemon_BG_tile");
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
-
-}
-
-.descrição-1 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.descrição-1 h1 { 
-     color: orange;
-
-    }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
   
   
