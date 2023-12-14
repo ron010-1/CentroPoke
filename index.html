@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/favicon-16x16.png">
 </head>
+
 <body>
     <header class="menu-principal" style="background-color: #000000;">
         <nav class="menu-esquerda">
-            <a href="index.html" style="text-decoration: none; color: white; font-size: 25px;">Home Page</a>
-            <a href="mangas.html" style="text-decoration: none; color: white; font-size: 25px;">Mangás</a>
+            <a href="index.html" style="text-decoration: none; color: white;" class="text">Home Page</a>
+            <a href="mangas.html" style="text-decoration: none; color: white;"class="text">Mangás</a>
         </nav>
         <img class="menu-logo" src="imagens/Logo.png" alt="logo">
         <nav class="menu-direita">
-            <a href="pokedex.html" style="text-decoration: none; color: white; font-size: 25px;">Pokedéx</a>
-            <a href="jogos.html" style="text-decoration: none; color: white; font-size: 25px;">Jogos</a>
-        </nav>        
+            <a href="pokedex.html" style="text-decoration: none; color: white;"class="text">Pokedéx</a>
+            <a href="jogos.html" style="text-decoration: none; color: white;"class="text">Jogos</a>
+        </nav>
     </header>
 
-    <main id="corpo">
-        <h1 class="welcome">Seja bem-vindo ao Centro Pokémon, idealizado e criado por fãs.</h1>
+    <h1 class="welcome">Boas Vindas ao Centro Pokémon, idealizado e criado por fãs.</h1>
+    <section class="whatPokemon">
+        <h1 class="textPoke">O Trio Pokémon mais conhecido do Mundo</h1>
+
+        <div class="pokemon-info">
+            <div class="pokemon charmander">
+                <img src="https://66.media.tumblr.com/tumblr_ma0tijLFPg1rfjowdo1_500.gif" alt="Charmander">
+                <h2>Charmander</h2>
+                <p>Uma chama queima na ponta do rabo de Charmander, significando sua vitalidade. Este Pokémon do tipo
+                    Fogo é conhecido por seu espírito energético e evolui para o poderoso Charizard.</p>
+            </div>
+
+            <div class="pokemon bulbasaur">
+                <img src="https://i.gifer.com/WnES.gif" alt="Bulbasaur">
+                <h2>Bulbasaur</h2>
+                <p>Bulbasaur, um Pokémon do tipo Planta/Venenoso, carrega uma planta bulbosa em suas costas. Ao evoluir
+                    para Ivysaur e depois para Venusaur, a planta se transforma em uma flor magnífica.</p>
+            </div>
+
+            <div class="pokemon squirtle">
+                <img src="https://66.media.tumblr.com/tumblr_ma4ft6OXxw1rfjowdo1_500.gif" alt="Squirtle">
+                <h2>Squirtle</h2>
+                <p>Squirtle, o Pokémon do tipo Água, cativa com sua aparência adorável. Conhecido por suas habilidades
+                    baseadas em água, Squirtle evolui para Wartortle e eventualmente para o temível Blastoise.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <main id="news">
+        <h1 class="welcome">Noticias do Universo Poke</h1>
+
         <div id="container-grid">
-           <div class="noticia1"><a href=""><!--<img src="/imagens/noticia1.jpg" alt="noticia1" class="noticia1">--></a></div>
-           <div class="noticia2"><a href=""><!--<img src="/imagens/noticia2.png" alt="noticia2" class="noticia2">--></a></div>
-           <div class="noticia3"><a href=""><!--<img src="/imagens/noticia3.jpg" alt="noticia2" class="noticia3">--></a></div>
-           <div class="noticia4"><a href=""><!--<img src="/imagens/noticia3.jpg" alt="noticia2" class="noticia3">--></a></div>
-           <div id="noticia5"><a href=""><!--<img src="/imagens/noticia4.png" alt="noticia2" class="noticia4">--></a></div>
+            <div class="noticia1"><a href="noticia1.html"></a></div>
+            <div class="noticia2"><a href="noticia2.html"></a></div>
+            <div class="noticia3"><a href="noticia3.html"></a></div>
+            <div class="noticia4"><a href="noticia4.html"></a></div>
         </div>
         <p class="copy">Todas as informações são de direitos autorais da pokeblast.tv</p>
     </main>
@@ -36,20 +67,36 @@
     <section class="Desenvolvedores">
         <p class="about">Sobre os Desenvolvedores</p>
         <div class="container-text">
-        <div class="texto1">
-            <p>"Olá a todos, sou Riquelme, e estou animado para compartilhar a incrível jornada que vivi com meus colegas Marcos e Oseias em nosso projeto de Front End para a cadeira de Linguagem de Marcação. Nossa missão era integrar nossa paixão por Pokémon com nossas habilidades em desenvolvimento web, e o resultado foi surpreendente.
-                Embarcamos nessa jornada com a determinação de criar algo único, algo que mergulhasse profundamente no vasto universo dos Pokémon. Com minhas habilidades em HTML, mergulhei na estruturação das páginas, garantindo que cada elemento estivesse no lugar certo, com clareza e semântica.
-                Marcos, com sua expertise em CSS, trouxe uma explosão de cores e estilo ao projeto. Cada página ganhou vida com seus estilos elegantes, proporcionando uma experiência visual envolvente para os visitantes. Foi incrível ver como as características distintas de cada Pokémon se destacavam em meio aos designs cuidadosamente elaborados.
-                "</p>
+            <div class="texto1">
+                <p>"Olá a todos, sou Riquelme, e estou animado para compartilhar a incrível jornada que vivi com meus
+                    colegas Marcos e Oseias em nosso projeto de Front End para a cadeira de Linguagem de Marcação. Nossa
+                    missão era integrar nossa paixão por Pokémon com nossas habilidades em desenvolvimento web, e o
+                    resultado foi surpreendente.
+                    Embarcamos nessa jornada com a determinação de criar algo único, algo que mergulhasse profundamente
+                    no vasto universo dos Pokémon. Com minhas habilidades em HTML, mergulhei na estruturação das
+                    páginas, garantindo que cada elemento estivesse no lugar certo, com clareza e semântica.
+                    Marcos, com sua expertise em CSS, trouxe uma explosão de cores e estilo ao projeto. Cada página
+                    ganhou vida com seus estilos elegantes, proporcionando uma experiência visual envolvente para os
+                    visitantes. Foi incrível ver como as características distintas de cada Pokémon se destacavam em meio
+                    aos designs cuidadosamente elaborados.
+                    "</p>
+            </div>
+            <div class="texto2">
+                <P>"Oseias, o mago do JavaScript, adicionou a magia interativa ao nosso projeto. Seus scripts permitiram
+                    que os usuários explorassem os Pokémon de maneira dinâmica, tornando a experiência de navegação
+                    envolvente e divertida. As animações suaves e os detalhes interativos foram o toque final que elevou
+                    nosso projeto a outro nível.
+                    Juntos, criamos um espaço onde os fãs de Pokémon poderiam se perder em um mundo de informações
+                    detalhadas sobre seus monstrinhos favoritos. O retorno positivo que recebemos não apenas validou
+                    nossos esforços, mas também nos encheu de satisfação por termos conseguido integrar duas paixões tão
+                    distintas de uma maneira harmoniosa.
+                    Este projeto não foi apenas uma tarefa acadêmica; foi uma jornada apaixonante, onde aprendemos,
+                    crescemos e nos divertimos. Estou incrivelmente orgulhoso do trabalho conjunto de nossa equipe e
+                    ansioso por futuras explorações criativas."</P>
+            </div>
         </div>
-        <div class="texto2">
-            <P>"Oseias, o mago do JavaScript, adicionou a magia interativa ao nosso projeto. Seus scripts permitiram que os usuários explorassem os Pokémon de maneira dinâmica, tornando a experiência de navegação envolvente e divertida. As animações suaves e os detalhes interativos foram o toque final que elevou nosso projeto a outro nível.
-                Juntos, criamos um espaço onde os fãs de Pokémon poderiam se perder em um mundo de informações detalhadas sobre seus monstrinhos favoritos. O retorno positivo que recebemos não apenas validou nossos esforços, mas também nos encheu de satisfação por termos conseguido integrar duas paixões tão distintas de uma maneira harmoniosa.
-                Este projeto não foi apenas uma tarefa acadêmica; foi uma jornada apaixonante, onde aprendemos, crescemos e nos divertimos. Estou incrivelmente orgulhoso do trabalho conjunto de nossa equipe e ansioso por futuras explorações criativas."</P>
-        </div>
-    </div>
     </section>
- 
+
     <footer class="menu-baixo">
         <nav class="menu-redes-sociais">
             <a href="https://github.com/ron010-1/CentroPoke"><img src="imagens/github.png" alt="github"></a>
@@ -60,4 +107,5 @@
     </footer>
 
 </body>
+
 </html>

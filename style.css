@@ -1,98 +1,282 @@
 @font-face {
     font-family: 'Oxanium';
-    src: url('caminho/para/o/arquivo/fonte.woff2') format('woff2'), /* Formato WOFF2 */
-         url('caminho/para/o/arquivo/fonte.woff') format('woff'); /* Formato WOFF */
-    /* Adicione outros formatos de fonte, se necessário */
-    /* Exemplo: url('caminho/para/o/arquivo/fonte.ttf') format('truetype'); */
+    src: url('caminho/para/o/arquivo/fonte.woff2') format('woff2'),
+        /* Formato WOFF2 */
+        url('caminho/para/o/arquivo/fonte.woff') format('woff');
+    /* Formato WOFF */
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
-body{
+
+body {
     width: 100%;
     background-image: url(imagens/fundo.png);
     color: white;
-    min-height: 100vh;
     text-align: center;
 }
+
+text {
+    font-size: 40px;
+}
+
+/* ---------------  SEÇÃO MENU ----------------*/
+
 .menu-principal {
     width: 100%;
     align-items: center;
     justify-items: center;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    padding-bottom: 12px;
-    background-color: #f51010; /* Cor de fundo para o menu inteiro */
+    padding-bottom: 15px;
+    background-color: #f51010;
+    /* Cor de fundo para o menu inteiro */
 }
-.menu-esquerda{
+
+.menu-esquerda {
     display: flex;
     gap: 35px;
     padding-left: 100px;
 }
 
-.menu-direita{
+.menu-direita {
     display: flex;
     gap: 35px;
     padding-right: 100px;
 }
 
-.menu-logo{
+.menu-logo {
     height: 40px;
     margin-top: 5px;
 }
 
-#corpo{
+/* ---------------  SEÇÃO TRIO POKEMON ----------------*/
+
+.whatPokemon {
+    position: relative;
+    width: 100%;
+    /* Largura da caixa preta */
+    height: 515px;
+    /* Altura da caixa preta */
+}
+
+.welcome {
+    font-family: Oxanium;
+    font-size: 45px;
+    margin-top: 60px;
+}
+
+.textPoke {
+    margin-top: 15px;
+}
+
+.pokemon-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.pokemon {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.pokemon:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.charmander {
+    background-color: #f08031;
+}
+
+.bulbasaur {
+    background-color: #7ac74c;
+}
+
+.squirtle {
+    background-color: #76a5e1;
+}
+
+.pokemon img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pokemon:hover img {
+    transform: scale(1.05);
+}
+
+.pokemon p {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.584);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.pokemon:hover p {
     display: block;
+    opacity: 1;
 }
-.welcome{
-    margin-top: 50px;
+
+/* ---------------  SEÇÃO NOTICIAS ----------------*/
+#news {
+    padding-top: 0%;
 }
-#container-grid{
+
+#container-grid {
     width: 100%;
     height: 100%;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 50px;
+    gap: 10px;
 
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 50px 150px;
     grid-template-areas:
-     "noticia1 noticia1 noticia2 noticia2"
-     "noticia1 noticia1 noticia3 noticia4";
+        "noticia1 noticia1 noticia2 noticia2"
+        "noticia1 noticia1 noticia3 noticia4";
 }
-.noticia1{
+
+.noticia1 {
     background-image: url(/imagens/noticia1.jpg);
     grid-area: noticia1;
+    border: 2px solid black;
+    padding: 2px;
+    width: 100%;
+    /* Garante que a imagem preencha a largura da célula */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    justify-self: center;
+    /* Alinha horizontalmente ao centro */
 }
-.noticia2{
+
+.noticia2 {
     background-image: url(/imagens/noticia2.png);
     grid-area: noticia2;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    /* Garante que a imagem preencha a largura da célula */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    justify-self: center;
+    /* Alinha horizontalmente ao centro */
 }
-.noticia3{
+
+.noticia3 {
     background-image: url(/imagens/noticia3.jpg);
     grid-area: noticia3;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    /* Garante que a imagem preencha a largura da célula */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    justify-self: center;
+    /* Alinha horizontalmente ao centro */
 }
-.noticia4{
+
+.noticia4 {
     background-image: url(/imagens/noticia4.png);
     grid-area: noticia4;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    /* Garante que a imagem preencha a largura da célula */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    justify-self: center;
 }
-.copy{
+
+.copy {
     margin-left: 49%;
     margin-right: 0px;
 }
-.menu-redes-sociais{
+
+/* ---------------  SEÇÃO DESENVOLVEDORES ----------------*/
+.Desenvolvedores {
+    margin-top: 30px;
+    font-family: 'Oxanium', cursive;
+}
+
+.about {
+    font-size: 50px;
+}
+
+.container-text {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.texto1,
+.texto2 {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    /* Define os textos como flexíveis */
+    align-items: center;
+    /* Alinha verticalmente o conteúdo */
+}
+
+.texto1 {
+    margin-right: 15px;
+}
+
+.texto2 {
+    margin-left: 15px;
+}
+
+
+/* ---------------  SEÇÃO RODAPÉ ----------------*/
+
+.menu-redes-sociais {
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
     padding-left: 10px;
     padding-right: 20px;
 }
-.menu-baixo{
+
+.menu-baixo {
     position: relative;
     margin-top: 175px;
     border-top: 2px solid white;
@@ -102,42 +286,79 @@ body{
     justify-content: space-between;
 }
 
-.menu-logo-baixo{
+.menu-logo-baixo {
     height: 30px;
 }
-.Desenvolvedores{
-    margin-top: 110px;
-}
-.about{
-    font-size: 50px;   
-}
-.container-text {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 10px;
-}
 
-.texto1 {
-    flex: 1; /* Ocupa 2 partes do espaço */
-    margin-left: 70px;
-}
 
-.texto2 {
-    flex: 1;
-    margin-right: 70px;
-}
-/* Estilos para o formato desktop */
-@media only screen and (min-width: 1200px) {
+/* ---------------  SEÇÃO MEDIA QUERY ----------------*/
 
-}
+/* Estilos gerais */
 
-/* Estilos para o formato de tablet */
-@media only screen and (min-width: 576px) and (max-width: 990px) {
-    
-} 
+/* ... (Seu código atual permanece o mesmo) ... */
 
-/* Estilos para o formato de smartphone */
+/* Estilos para telas menores (smartphones) */
 @media only screen and (max-width: 575px) {
+    body {
+        font-size: 14px;
+        /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    /* ---------------  SEÇÃO MENU MEDIA ----------------*/
+    .menu-principal {
+        flex-direction: row;
+        font-size: 10px;
+    }
+    .menu-esquerda, .menu-direita {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-logo {
+        margin-top: 10px;
+        margin: 0;
+        height: 20px;
+    }
+
+    .welcome {
+        font-family: Oxanium;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .textPoke {
+        margin-top: 15px;
+        font-size: 15PX;
+    }
+    
+    
+    #container-grid {
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-rows: 50px 50px;
+    }
+
+    .whatPokemon {
+        height: auto;
+        /* Ajusta a altura conforme necessário */
+    }
+    .pokemon{
+        width: 350px;
+    }
+    .pokemon p{
+        text-align: start;
+        font-size: 8px;
+        padding: 20px;
+        /* Faz os pokémons ocuparem a largura disponível */
+    }
+
+    /* ... (Outros ajustes para telas menores) ... */
+}
+
+/* Estilos para tablets e dispositivos menores */
+@media only screen and (min-width: 576px) and (max-width: 991px) {}
+
+/* Estilos para telas maiores (desktops) */
+@media only screen and (min-width: 992px) {
+
+    /* ... (Ajustes para telas grandes) ... */
 }
