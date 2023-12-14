@@ -7,6 +7,8 @@
 
   
 body{
+    position: fixed;
+    width: 100%;
     background-image: url(imagens/fundo.png);
     color: white;
     min-height: 100vh;
@@ -14,12 +16,15 @@ body{
 }
 
 .menu-principal{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.874);;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
     border-bottom: 2px solid white;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .menu-esquerda{
@@ -36,9 +41,51 @@ body{
 
 .menu-logo{
     height: 40px;
+    margin-top: 5px;
 }
 
+#corpo{
+    display: flex;
+}
+#container-grid{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 10%;
+
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 250px 250px;
+    grid-template-areas:
+     "noticia1 noticia1 noticia2 noticia2"
+     "noticia1 noticia1 noticia3 noticia4";
+}
+.noticia1{
+    background-image: url(/imagens/noticia1.jpg);
+    grid-area: noticia1;
+}
+.noticia2{
+    background-image: url(/imagens/noticia2.png);
+    grid-area: noticia2;
+}
+.noticia3{
+    background-image: url(/imagens/noticia3.jpg);
+    grid-area: noticia3;
+}
+.noticia4{
+    background-image: url(/imagens/noticia4.png);
+    grid-area: noticia4;
+}
+.menu-redes-sociais{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
 .menu-baixo{
+    position: relative;
+    margin-top: 175px;
     border-top: 2px solid white;
     padding-top: 10px;
     display: flex;
@@ -49,35 +96,6 @@ body{
 .menu-logo-baixo{
     height: 30px;
 }
-
-.menu-redes-sociais{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 820px;
-}
-#container-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "img1 img1 img2 img2"
-      "img1 img1 img3 img4";
-}
-#noticia1{
-    grid-area: img1;
-}
-#noticia2{
-    grid-area: img2;
-}
-#noticia3{
-    grid-area: img3;
-}
-#noticia4{
-    grid-area: img4;
-}
 /* Estilos para o formato desktop */
 @media only screen and (min-width: 1200px) {
 
@@ -85,10 +103,9 @@ body{
 
 /* Estilos para o formato de tablet */
 @media only screen and (min-width: 576px) and (max-width: 990px) {
-
+    
 }
 
 /* Estilos para o formato de smartphone */
 @media only screen and (max-width: 575px) {
-    
 }

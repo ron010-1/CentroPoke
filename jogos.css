@@ -15,12 +15,15 @@ body{
 }
 
 .menu-principal{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.874);;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
     border-bottom: 2px solid white;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .menu-esquerda{
@@ -37,6 +40,7 @@ body{
 
 .menu-logo{
     height: 40px;
+    margin-top: 5px;
 }
 
 .menu-baixo{
