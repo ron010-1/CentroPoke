@@ -32,6 +32,7 @@ text {
     justify-items: center;
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
     padding-bottom: 15px;
     background-color: #f51010;
     /* Cor de fundo para o menu inteiro */
@@ -153,32 +154,54 @@ text {
 }
 
 /* ---------------  SEÇÃO NOTICIAS ----------------*/
+
+/*Nova posição das imagens com flex*/
+#container-flex-noticies {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    gap: 10px;
+}
+
+#container-flex-noticies>img {
+    width: 450px;
+    height: auto;
+}
+
 #news {
     padding-top: 0%;
 }
 
 #container-grid {
-    width: 100%;
-    height: 100%;
+    width: 65%;
+    height: 400px;
     justify-content: center;
-    margin-top: 50px;
-    gap: 10px;
+    margin: auto;
+    gap: 3px;
 
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 50px 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "noticia1 noticia1 noticia2 noticia2"
-        "noticia1 noticia1 noticia3 noticia4";
+        "noticia1"
+        "noticia2"
+        "noticia3"
+        "noticia4";
 }
 
 .noticia1 {
     background-image: url(/imagens/noticia1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     grid-area: noticia1;
-    border: 2px solid black;
     padding: 2px;
     width: 100%;
-    /* Garante que a imagem preencha a largura da célula */
     height: auto;
     /* Mantém a proporção original da imagem */
     justify-self: center;
@@ -187,8 +210,9 @@ text {
 
 .noticia2 {
     background-image: url(/imagens/noticia2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: noticia2;
-    border: 2px solid black;
     padding: 10px;
     width: 100%;
     /* Garante que a imagem preencha a largura da célula */
@@ -200,8 +224,10 @@ text {
 
 .noticia3 {
     background-image: url(/imagens/noticia3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start center;
     grid-area: noticia3;
-    border: 2px solid black;
     padding: 10px;
     width: 100%;
     /* Garante que a imagem preencha a largura da célula */
@@ -213,8 +239,10 @@ text {
 
 .noticia4 {
     background-image: url(/imagens/noticia4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     grid-area: noticia4;
-    border: 2px solid black;
     padding: 10px;
     width: 100%;
     /* Garante que a imagem preencha a largura da célula */
@@ -235,7 +263,7 @@ text {
 }
 
 .about {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .container-text {
@@ -309,12 +337,15 @@ text {
         flex-direction: row;
         font-size: 10px;
     }
-    .menu-esquerda, .menu-direita {
+
+    .menu-esquerda,
+    .menu-direita {
         flex-direction: row;
         align-items: center;
         padding: 0;
         margin: 0;
     }
+
     .menu-logo {
         margin-top: 10px;
         margin: 0;
@@ -326,31 +357,33 @@ text {
         font-size: 20px;
         margin-top: 60px;
     }
+
     .textPoke {
         margin-top: 15px;
         font-size: 15PX;
     }
-    
-    
-    #container-grid {
-        grid-template-columns: 150px 150px 150px 150px;
-        grid-template-rows: 50px 50px;
-    }
+
 
     .whatPokemon {
         height: auto;
         /* Ajusta a altura conforme necessário */
     }
-    .pokemon{
+
+    .pokemon {
         width: 350px;
     }
-    .pokemon p{
+
+    .pokemon p {
         text-align: start;
         font-size: 8px;
         padding: 20px;
         /* Faz os pokémons ocuparem a largura disponível */
     }
-
+    #container-flex-noticies>img {
+        width: 280px;
+        height: auto;
+        margin: 0;
+    }
     /* ... (Outros ajustes para telas menores) ... */
 }
 
