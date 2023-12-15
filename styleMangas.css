@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
+
 body {
     width: 100%;
     background-image: url(imagens/fundo.png);
@@ -64,28 +65,29 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    border-bottom: 2px solid white;
-    padding-bottom: 12px;
-    background-color: #f51010; /* Cor de fundo para o menu inteiro */
+    padding-bottom: 15px;
+    background-color: #f51010;
+    /* Cor de fundo para o menu inteiro */
 }
-.menu-esquerda{
+
+.menu-esquerda {
     display: flex;
     gap: 35px;
     padding-left: 100px;
 }
 
-.menu-direita{
+.menu-direita {
     display: flex;
     gap: 35px;
     padding-right: 100px;
 }
 
-.menu-logo{
+.menu-logo {
     height: 40px;
     margin-top: 5px;
 }
 
-.menu-baixo{
+.menu-baixo {
     border-top: 2px solid white;
     padding-top: 10px;
     display: flex;
@@ -93,47 +95,87 @@ body {
     justify-content: space-between;
 }
 
-.menu-logo-baixo{
+.menu-logo-baixo {
     height: 30px;
 }
 
-.menu-redes-sociais{
+.menu-redes-sociais {
     display: flex;
     gap: 50px;
     padding-right: 20px;
 }
 
-.conteudo-principal{
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding-top: 20px;
 }
 
-.conteudo-principal > h2{
+.conteudo-principal>h2 {
     padding-right: 955px;
 }
 
-.mangas-1{
+.mangas-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.mangas-2{
+.mangas-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.mangas-3{
+.mangas-3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.mangas-4{
+.mangas-4 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        font-size: 14px;
+        /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    /* ---------------  SEÇÃO MENU MEDIA ----------------*/
+    .menu-principal {
+        flex-direction: row;
+        font-size: 10px;
+    }
+
+    .menu-esquerda,
+    .menu-direita {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-logo {
+        margin-top: 10px;
+        margin: 0;
+        height: 20px;
+    }
+
+    .mangas-container {
+        flex-direction: column;
+        width: 100%; /* Ocupa toda a largura disponível */
+        justify-content: space-between; /* Distribui o espaço entre as colunas */
+        margin: 2px;
+    }
+
+    .manga-img {
+        flex-basis: calc(50% - 50%); /* Define a largura para duas colunas com margem */
+        margin-bottom: 20px; /* Espaçamento entre as linhas */
+    }
+
 }
