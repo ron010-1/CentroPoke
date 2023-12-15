@@ -4,17 +4,60 @@
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
-
-  
-body{
+body {
+    width: 100%;
     background-image: url(imagens/fundo.png);
     color: white;
-    min-height: 100vh;
     text-align: center;
 }
 
+.mangas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mangas-div {
+    margin: 10px;
+}
+
+.mangas-div-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.manga-tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.mangas-div-img:hover .manga-tooltip {
+    opacity: 1;
+}
+
+.manga-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #373E59;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mangas-div-img:hover .manga-img {
+    transform: scale(1.05);
+}
+
 .menu-principal {
-    position: fixed;
     width: 100%;
     align-items: center;
     justify-items: center;
